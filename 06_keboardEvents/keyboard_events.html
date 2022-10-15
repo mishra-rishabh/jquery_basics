@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyboard events</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+
+        <!--
+            mouse events mainly 3 tarike ke hote hain
+            1. keypress(): event will be triggered when key is pressed
+            2. keydown(): event will be triggred when key is down
+            3. keyup(): event will be triggred when key is up
+        -->
+        <h1>Keyboard events.</h1>
+
+        <div id="box1">
+            <h2>I am a box 1</h1>
+            <p>something something something something something something</p>
+        </div>
+
+        <script src="../jquery.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                /*
+                    body tag ke upr keypress event pe humne css change ki iski
+                    isse poori body ka color green ho jayega
+                */
+                $('body').keypress(function() {
+                    /*
+                        yaha humne this keyword use kiya hai. iska mtlab ye hai ki humne jis tag par
+                        humne event lagaya agar usi pe hum koi function perform karna chahte hain
+                        to hum this keyword use kr skte hain.
+
+                        comment and uncomment krr ke dekhne hain saare functions
+                    */
+                    $(this).css("background-color", "green");
+
+                    /*
+                        ye upr wali line ki tarah hi kaam karega
+                        dono me se kuchh bhi use kar skte hain
+                    */
+                    // $("body").css("background-color", "green");
+                });
+
+
+                /*
+                    body tag ke upr keydown event pe humne css change ki iski
+                    isse poori body ka color red ho jayega
+                */
+                $('body').keydown(function() {
+                    $('body').css("background-color", "red");
+                });
+
+                /*
+                    body tag ke upr keyup event pe humne css change ki iski
+                    isse poori body ka color yellow ho jayega
+                */
+                $('body').keyup(function() {
+                    $('body').css("background-color", "yellow");
+                });
+            });
+        </script>
+    </body>
+</html>

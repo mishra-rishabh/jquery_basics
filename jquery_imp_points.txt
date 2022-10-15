@@ -66,3 +66,5 @@ refer 04_advanceSelectors/advance_selector.html
 
 11. mouse events
 refer 05_mouseEvents/mouse_events.html
+
+12. keyboard events
