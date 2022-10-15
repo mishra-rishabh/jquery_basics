@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse events</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+
+        <!--
+            mouse events mainly 5 tarike ke hote hain
+            1. click(): single click
+            2. dblclick(): double click
+            3. contextmenu(): right click
+            4. mouseenter(): mouse is pointing to the element
+            5. mouseleave(): mouse is leaving the element
+        -->
+        <h1>Mouse events.</h1>
+
+        <div id="box1" class="test">
+            <h2>I am a box 1</h1>
+            <p>something something something something something something</p>
+        </div>
+
+        <script src="../jquery.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                /*
+                    box1 id ke upr click event pe humne css change ki iski
+                */
+               $("#box1").click(function() {
+                    $("#box1").css("background-color", "pink");
+               });
+
+                /*
+                    box1 id ke upr double click event pe humne css change ki iski wapis se
+                */
+                $("#box1").dblclick(function() {
+                    $("#box1").css("background-color", "violet");
+               });
+
+                /*
+                    box1 id ke upr right click event pe humne css change ki iski
+                */
+                $("#box1").contextmenu(function() {
+                    $("#box1").css("background-color", "red");
+               });
+
+                /*
+                    box1 id ke upr mouse enter event pe humne css change ki iski
+                */
+                $("#box1").mouseenter(function() {
+                    $("#box1").css("background-color", "brown");
+               });
+
+                /*
+                    box1 id ke upr mouse leave event pe humne css change ki iski
+                */
+                $("#box1").mouseleave(function() {
+                    $("#box1").css("background-color", "blue");
+               });
+            });
+        </script>
+    </body>
+</html>

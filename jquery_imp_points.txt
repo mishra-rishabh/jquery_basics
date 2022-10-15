@@ -1,0 +1,68 @@
+points to remember:
+--------------------
+
+1. jquery js ki light weight library hai. isko use krne se humara kaam aasan aur chhota ho jata hai.
+
+2. abb hota kya hai, jo bhi hume js me kaam krna hota tha hum poora scratch se likhte the use, to ye hisab time taking tha,
+iske liye jquery team ne kya kiya usne saare important functions ek file me daal diye aur use naame de diya jQuery.
+isse hume extra code nhi likhna bass bana banaya function use krna hai.
+
+3. "write less do more" principle pe kaam krti hai jquery.
+
+4. why use jquery?
+short selectors, variety of animations, easy dom manipulation, easy css styling, easy dom traversing, simple ajax code, etc.
+
+5. short selector examples-
+javascript => document.getElementsByClassName('classname')
+jquery => $('.classname')
+
+javascript => document.getElementById('idname')
+jquery => $('#idname')
+
+javascript => document.getElementsByTagName('tagname')
+jquery => $('tagname')
+
+to dono me dekho kitna difference hai..jquery se code kitna chhota ho gaya dekho.
+
+6. benefits of jquery-
+browser independent...bole to kisi bhi browser me jqery ka code chalega, increase coding speed...bole to saare functions pehle se bane hain
+to hume bass use krna hai unhe, etc.
+
+7. jquery use krne ke liye swabse pehle use download krna hai link niche hai-
+https://jquery.com/
+refer 01_firstPage.html
+
+isme 2 links aaynge compressed (unreadable) ke liye aur uncompressed (readbale) ke liye, to koi bhi download kr skte hain us link pe right click krr ke
+then save link as krr dena hai
+
+8. jquery ko cdn (content delivery network) ke through use krne ke liye https://jquery.com/ is link pe jana hai usme "Using jQuery with a CDN"
+me jana hai fir sabse niche "Past Releases" me ek link given hai use open krna hai https://releases.jquery.com/ ye raha link. isme version ke hisab
+se choose krna hai aur "minified" ya "uncompressed" accordingly click krna hai, aur jo link milega use copy kr lena hai and use head tag me daal dena hai
+refer 02_secondPageUsingCdn.html
+
+9.
+$(document).ready(function() {
+   "rest of your code goes here"
+}); 
+
+ise smjhte hain ki ye kya hai. jabb hum jquery ko code karenge to ye code hume likhna padta hai thik....abb isme 2 parts hote hain ek selector dusra method.
+"$(document)": ye selector hota hai and "ready()" ye method hota hai. jo method hota hai wo selector se linked hota hai, bole to jo selector hoga uske hisab
+se methods change hote rehte hain. selector ka use hum dom ke andar jo elements hain unko target krne ke liey krte hain aur jo methods hote hain unhe hum
+unke through hum ye batate hain ki is selector ko select krne ke baad hum uske sath kya krna chahte hain. 
+selector: target dom element,
+method: what work to do
+
+10. advance selectors-
+$("*"): html me jitne bhi tags hain unko ek sath target karta hai.
+$("ul li"): parent child selector, isme ye keh rha hai ki ul ke and jitne bhi li aa rhe hain unhe target krna hai.
+$(".class1, .class2"): agar multiple classes ko target krna hai to comma se separate kr ke class name likh dena hai.
+$("h1, div, p"): multiple tags ko target krna to comma se separate krr ke tag names likh dena hai.
+$("p:first"): ye poore page me jo sabse pehla paragraph tag hai use target karega.
+$("p:last"): ye poore page me jo sabse last paragraph tag hai use target karega.
+$("li:even"): jitne bhi li even number pe aarhe unko target karega.
+$("li:odd"): jitne bhi li odd number pe aarhe unko target karega.
+aur bhi advance selectors hote hain
+refer 04_advanceSelectors/advance_selector.html
+
+11. mouse events
+refer 05_mouseEvents/mouse_events.html

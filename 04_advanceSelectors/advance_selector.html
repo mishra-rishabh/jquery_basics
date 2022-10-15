@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advance selector</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <h1>Advance selectors.</h1>
+
+        <div id="box1">
+            <h2>I am a box 1</h1>
+            <p>something something something something something something</p>
+        </div>
+
+        <div id="box2" class="test">
+            <h2>I am a box 2</h1>
+            <p>something something something something something something</p>
+        </div>
+
+        <ul id="list1">
+            <li>Sinarest</li>
+            <li>Drotin-M</li>
+            <li>Crocin</li>
+            <li>Cetirizine</li>
+            <li>Ondem-MD</li>
+        </ul>
+
+        <ul id="list2">
+            <li>Tiles</li>
+            <li>Paint</li>
+            <li>Carpenter</li>
+            <li>Electrician</li>
+            <li>Cement</li>
+        </ul>
+
+        <ul id="list3">
+            <li>Bartan</li>
+            <li class="test">Maid aunty</li>
+            <li>Jhaadu</li>
+            <li class="test">Safayi</li>
+            <li>Gussa</li>
+        </ul>
+
+        <script src="../jquery.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                /*
+                    abb hum apni list ko target kr ke uski css krna chahte hain,
+                    to uske liye css() method use karenge uski id use krr ke
+                */
+
+                /*
+                    list1 id ke saare items red ho jayenge
+                    css() method 2 parameters leta hai: 1. property, 2. value
+                    yaha color property hai aur red value
+                */
+                $("#list1").css("color", "red");
+
+                
+                /*
+                    list2 id ke saare li ka border 1 px aur color blue ho jayega
+                    advance selector hai ye
+                */
+               $("#list2 li").css("border", "1px solid blue");
+
+
+               /*
+                    abb yaha jinki bhi class "test" hogi unka background colour yellow ho jayega
+                    boxx2 aur list3 me "test" class use hui hai
+               */
+                $(".test").css("background", "yellow");
+
+                
+                /*
+                    jitne bhi elements hain unn sabb ka border green krr dega.
+                    comment and uncomment krr ke dekhna isko
+                */
+            //    $("*").css("border", "1px solid green");
+
+
+               /*
+                    ye sabse pehle li ko target karega
+                    comment and uncomment krr ke dekhna isko
+               */
+                // $("li:first").css("font-size", "50px");
+
+                /*
+                    abb hume agar kisi specific li ko target krna hai to uska index dena hoga eq() method use krr ke
+                    indexing 0 se start hoti hai
+                    comment and uncomment krr ke dekhna isko
+               */
+            //    $("ul li:eq(2)").css("font-size", "50px");
+            });
+        </script>
+    </body>
+</html>

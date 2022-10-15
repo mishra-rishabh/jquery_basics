@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery syntax</title>
+        <link rel="stylesheet" href="./style.css">
+        <!-- path accordingly dena hai jquery file ka, wrna file nhi milegi to jquery kaam nhi karegi -->
+    </head>
+
+    <body>
+        <h1>jQuery syntax.</h1>
+
+        <div id="box1">
+            <h2>I am a box</h1>
+            <p>something something something something something something</p>
+        </div>
+
+        <script src="../jquery.js"></script>
+        <!-- ye dekho yaha pe jquery file body me add ki hai to abb hume baaki code iske niche hi likhna hoga jquery ka -->
+        
+        <script>
+            $(document).ready(function() {
+                /*
+                    ye jo ready function hai, ye bata rha hai ki jabb poora document ready ho jayega load hone ke baad
+                    tabb ye function kaam karega jo hum niche likhenge.
+                */
+
+                var doc = $('#box1').html();
+                console.log(doc);
+
+                /*
+                    abb dekho yaha humare div ki id "box1" thi, to is liye # use kiya abb is id se judaa jo bhi element hai uski "html" wo
+                    "doc" variable me store ho jayegi, kyu ki humne "html()" method use kiya hai.
+                    jabb hum apne cosole me dekhnge to hume poora div ke ander ka code dikh jayega
+                */
+            });
+        </script>
+    </body>
+</html>
