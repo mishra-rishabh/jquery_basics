@@ -68,3 +68,9 @@ refer 04_advanceSelectors/advance_selector.html
 refer 05_mouseEvents/mouse_events.html
 
 12. keyboard events
+refer 06_keyboardEvents/keyboard_events.html
+
+13. form events
+refer 07_formEvents/form_event.html and 07_formEvents/events.js
+
+14. jabb bhi hum kisi event ke through css apply krte hain to usme inline css lagti hai internally convert ho ke.

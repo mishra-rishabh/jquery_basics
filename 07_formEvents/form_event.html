@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form events</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+
+        <!--
+            form events mainly 5 tarike ke hote hain
+            1. focus(): form ke element pe focus krne pe, bole to us element pe jaise click karenge tabb ye event trigger hoga
+            2. blur(): form ke element ko leave krne pe, bole to us element ke bahar click karenge tabb ye event trigger hoga
+            3. change(): form ke element me jaise hi koi change hoga tabb ye event trigger hoga
+            4. select(): form ke input box ke ander jo likha hai usko jaise hi select karenge tabb ye event trigger hoga
+            5. submit(): form ke ander jaise hi submit button ko click karenge tabb ye event trigger hoga
+        -->
+        <h1>Form events.</h1>
+
+       <form action="" id="myForm">
+            <label>Name: </label>
+            <input type="text" id="myName">
+            <br/> <br/>
+
+            <label>Email: </label>
+            <input type="email" id="myEmail">
+            <br/> <br/>
+
+            <label>City: </label>
+            <select id="myCity">
+                <option value="Delhi">Delhi</option>
+                <option value="Fatehpur">Fatehpur</option>
+                <option value="Noida">Noida</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+            <br/> <br/>
+            
+            <input type="submit">
+       </form>
+
+       <h3 id="myTestHeading">Select your city. My value will change accordingly.</h3>
+
+       <!-- remember jquery.js should be included first else it won't work -->
+       <script src="../jquery.js"></script>
+
+       <!-- events.js me hum apne saare events likhenge -->
+       <script src="./events.js"></script>
+    </body>
+</html>
