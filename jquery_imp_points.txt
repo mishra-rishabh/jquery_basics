@@ -74,3 +74,6 @@ refer 06_keyboardEvents/keyboard_events.html
 refer 07_formEvents/form_event.html and 07_formEvents/events.js
 
 14. jabb bhi hum kisi event ke through css apply krte hain to usme inline css lagti hai internally convert ho ke.
+
+15. window events
+refer 08_windowEvents/window_event.html and 08_windowEvents/events.js
