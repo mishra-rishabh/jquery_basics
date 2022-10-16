@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Window events</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+
+        <!--
+            form events mainly 4 tarike ke hote hain
+            1. load(): window ke load hone pe event trigger hoga
+            2. unload(): window ke unload hone pe event trigger hoga
+            3. resize(): browser window ko resize krne pe event trigger hoga
+            4. scroll(): jabb div element pe scroll karenge tabb event trigger hoga 
+
+            NOTE: load() and unload() jquery ke version 3 se remove krr diye gaye hain,
+            to ye naye version me kaam nahi karenge
+        -->
+        <h1>Window events.</h1>
+
+        <h3>Window width and height</h3>
+        <h4 id="myHeading">Resize the window size to check resize() event.</h4>
+
+        <h3>I am a box</h3>
+        <div id="box1">
+            Now is the winter of our discontent
+            Made glorious summer by this sun of York;
+            And all the clouds that lour'd upon our house
+            In the deep bosom of the ocean buried.
+            Now are our brows bound with victorious wreaths;
+            Our bruised arms hung up for monuments;
+            Our stern alarums changed to merry meetings,
+            Our dreadful marches to delightful measures.
+            Grim-visaged war hath smooth'd his wrinkled front;
+            And now, instead of mounting barded steeds
+            To fright the souls of fearful adversaries,
+            He capers nimbly in a lady's chamber
+            To the lascivious pleasing of a lute.
+            But I, that am not shaped for sportive tricks,
+            Nor made to court an amorous looking-glass;
+            I, that am rudely stamp'd, and want love's majesty
+            To strut before a wanton ambling nymph;
+            I, that am curtail'd of this fair proportion,
+        </div>
+
+        <h4 id="testHeading">Scroll the box to see the changes.</h4>
+
+       <!-- remember jquery.js should be included first else it won't work -->
+       <script src="../jquery.js"></script>
+
+       <!-- events.js me hum apne saare events likhenge -->
+       <script src="./events.js"></script>
+    </body>
+</html>
