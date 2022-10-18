@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>get methods</title>
+        <link rel="stylesheet" href="./style1.css">
+    </head>
+
+    <body>
+
+        <!--
+           get methods mainly 4 tarike ke hote hain
+            1. text(): jis bhi selector me ye method use karenge uska poora text uttha ke de dega
+            lekin html tags ko remove krr dega
+            2. html(): jis bhi selector me ye method use karenge uska poora html uttha ke de dega
+            lekin html tags ko include kar ke dega
+            3. attr(): ye method hume html tags ke attribites ki value de deta hai.
+            check example to understand more
+            4. val(): ye input elements jaise inputbox, radio button, checkbox, etc inki value uttha ke de dega
+            refer val_getMethod.html
+        -->
+        <h1>Get methods.</h1>
+
+        <div id="box1" class="test boxClass demoClass">
+            <h2>I am a box 1</h1>
+            <p>something something something something something something</p>
+        </div>
+
+        <script src="../jquery.js"></script>
+        
+        <script>
+            /*
+                yaha pe htmlVal variable me #box1 id ke ander jo bhi html likhi hai wo store ho jayegi
+                browser ke console me check krna hai isko
+            */
+            $(document).ready(function() {
+                var htmlVal = $('#box1').html();
+                console.log("html code inside #box1: ", htmlVal);
+            });
+
+            /*
+                yaha pe htmlVal variable me #box1 id ke ander jo h2 tag hai uski html store ho jayegi
+                browser ke console me check krna hai isko
+            */
+            $(document).ready(function() {
+                var htmlVal = $('#box1 h2').html();
+                console.log("html code inside #box1 h2: ", htmlVal);
+            });
+
+            /*
+                yaha pe htmlVal variable me #box1 id ke ander jo bhi tags hain unka sirf text store ho jayega
+                isko compare karna niche di hui line jo commented hai usse
+                browser ke console me check krna hai isko
+            */
+            $(document).ready(function() {
+                var htmlVal = $('#box1').text();
+
+                // uncomment this line and comment the above line to see the difference
+                // var htmlVal = $('#box1').text();
+                console.log("text inside #box1: ", htmlVal);
+            });
+
+            /*
+                attr() method me hume batana hota hai ki kis attribute ki values extract krni hain
+                yaha humne #box1 id ke ander jo class attribute hai uski values extract ki hain
+                - attributes aise ho skte hain, jaise id, class, src, href, src, etc
+                jis attribute ki value chahiye bass use as a parameter pass kr dena hai attr() me
+            */
+            $(document).ready(function() {
+                var attrVal = $('#box1').attr('class');
+                console.log("all the values of #box1's class attribute: ", attrVal);
+            });
+        </script>
+    </body>
+</html>

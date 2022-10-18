@@ -77,3 +77,7 @@ refer 07_formEvents/form_event.html and 07_formEvents/events.js
 
 15. window events
 refer 08_windowEvents/window_event.html and 08_windowEvents/events.js
+
+16. get methods-
+html dom me jo alag alag tags/elements hote hain agar hum unki value uthhana chahte hain to uske liye hum get methods use krte hain.
+refer 09_getMethods/get_methods.html and 09_getMethods/val_getMethod.html

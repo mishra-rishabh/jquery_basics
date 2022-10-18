@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>get methods</title>
+        <link rel="stylesheet" href="./style2.css">
+    </head>
+
+    <body>
+
+        <!--
+            if you have directly opened this file then first look into get_methods.html and then come here
+            4. val(): ye input elements jaise inputbox, radio button, checkbox, etc inki value uttha ke de dega
+            refer val_getMethod.html
+        -->
+        <h1>Get methods</h1>
+
+       <form action="" id="myForm">
+            <label>Name: </label>
+            <input type="text" id="myName">
+            <br/> <br/>
+
+            <label>Email: </label>
+            <input type="email" id="myEmail">
+            <br/> <br/>
+
+            <label>City: </label>
+            <select id="myCity">
+                <option value="Delhi">Delhi</option>
+                <option value="Fatehpur">Fatehpur</option>
+                <option value="Noida">Noida</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+            <br/> <br/>
+            
+            <input type="submit">
+       </form>
+
+       <script src="../jquery.js"></script>
+
+       <script>
+            $(document).ready(function() {
+                $('#myForm').submit(function() {
+                    // name will store the value of name field
+                    var name = $('#myName').val();
+
+                    // email will store the value of email field
+                    var email = $('#myEmail').val();
+
+                    // city will store the value of city field
+                    var city = $('#myCity').val();
+
+                    /*
+                        is syntax ko template literal kehte hain.
+                        Isme backticks ke ander likhte hain sabb and variables ko ${} ke ander
+                        ye aise hi bataya knowledge ke liye
+                    */
+                    alert(`My name is ${name} and email is ${email} and I live in ${city}`);
+                });
+            });
+       </script>
+    </body>
+</html>
