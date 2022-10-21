@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Set methods</title>
+        <link rel="stylesheet" href="./style1.css">
+    </head>
+
+    <body>
+
+        <!--
+            set methods mainly 4 tarike ke hote hain
+            1. text(): jis bhi element me koi text likha hua agar use change krna hai to ise use karenge
+            2. html(): jis bhi element ki html change krna hai to ise use karenge.
+            3. attr(): kisi bhi element ka koi attribute change krna ho jaise class, etc to ise use karenge.
+            4. val(): agar kisi input element me koi value hai pehle se aur use change krni hai to is method ko use karenge
+        -->
+        <h1>Set methods.</h1>
+
+        <div id="box1" class="test boxClass demoClass">
+            <h2>I am a box 1</h1>
+            <p>something something something something something something</p>
+            <input type="text" id="txtBox1">
+            <br/> <br/>
+            <input type="text" id="txtBox2">
+            <br/> <br/>
+        </div>
+        <br/>
+        <button id="myBtn">Set Value</button>
+
+        <script src="../jquery.js"></script>
+        
+        <script>
+           $(document).ready(function() {
+                /*
+                    myBtn id wali button ke click event pe humne function implement kiya.
+                */
+                $('#myBtn').click(function() {
+                    /*
+                        abb box1 id ke ander jo h2 element hai uska text change kar denge, text() ko use krr ke
+                    */
+                    $('#box1 h2').text("My value is changed");
+
+                    /*
+                        abb box1 id ke ander jo <p> element hai uski html change kar denge, html() ko use krr ke
+                    */
+                   $('#box1 p').html("This is a <b>new paragraph</b>. I am here in place of old paragraph content.");
+
+                   /*
+                        abb box1 id ke ander jo h2 element hai uska attribute change kar denge, attr() ko use krr ke
+                        style1.css me colorPurple naam ki class, to uss class ko apply karenge attr() ki help se
+                        by default humne koi class nhi add ki, lekin attr() ki help se colorPurple class add karenge
+                    */
+                    $('#box1 h2').attr("class", "colorPurple");
+
+                    /*
+                        upr div ke andr jo 2 text boxes hain unki default value set ki hai niche wale (document).ready me
+                        yaha pe uksi value change karenge button ke click pe
+                    */
+                    $('#txtBox1').val("changed value 1");
+                    $('#txtBox2').val("changed value 2");
+                });
+
+                // another (document).ready, kyu ki hum chahte hain ki values document ke ready hone ke turant baad set ho jaye
+                $(document).ready(function() {
+                    /*
+                        upr div ke andr jo 2 text boxes hain unki default value set karenge val() use krr ke
+                        upr inki value change krr rhe button ke click pe
+                    */
+                    $('#txtBox1').val("default text box 1 value");
+                    $('#txtBox2').val("default text box 2 value");
+                });
+           });
+        </script>
+    </body>
+</html>

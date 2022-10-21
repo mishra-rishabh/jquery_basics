@@ -1,0 +1,9 @@
+#box1 {
+    background-color: greenyellow;
+    border: 2px solid black;
+    width: 40%;
+}
+
+.colorPurple {
+    color: purple;
+}
