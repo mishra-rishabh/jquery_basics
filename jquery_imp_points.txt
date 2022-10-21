@@ -83,4 +83,5 @@ html dom me jo alag alag tags/elements hote hain agar hum unki value uthhana cha
 refer 09_getMethods/get_methods.html and 09_getMethods/val_getMethod.html
 
 17. set methods: iska mtlab ye hai ki hum html elements me koi value set krna chahte hai.
-refer 10_setMethods
+refer 10_setMethods/set_methods.html
+
