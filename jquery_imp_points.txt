@@ -85,3 +85,5 @@ refer 09_getMethods/get_methods.html and 09_getMethods/val_getMethod.html
 17. set methods: iska mtlab ye hai ki hum html elements me koi value set krna chahte hai.
 refer 10_setMethods/set_methods.html
 
+18. add and remove class
+refer 11_addRemoveClass

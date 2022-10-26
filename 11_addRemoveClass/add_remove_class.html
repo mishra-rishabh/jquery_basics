@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add, remove and toggle class</title>
+        <link rel="stylesheet" href="./style1.css">
+    </head>
+
+    <body>
+
+        <!--
+            isme 3 tarah ke methods hote hain
+            1. addClass(): ye nayi class add kar dega.
+            2. removeClass(): agar pehle se koi class lagi hui hai to use remove kr dega
+            3. toggleClass(): ye classes ke beech me toggle krta hai, bole to agar class lagi hai
+            to remove kr dega aur nhi lagi to apply kr dega, ya firr 2 classes ke beech me toggle karega
+        -->
+        <h1>Add, remove and toggle class</h1>
+
+        <div id="box1" class="test">
+            <h2>I am a box 1</h1>
+            <p>something something something something something something something something something something</p>
+        </div>
+        <br/>
+        <button id="addClassBtn">Add Class</button>
+        <button id="removeClassBtn">Remove Class</button>
+        <button id="toggleClassBtn">Toggle Class</button>
+
+        <script src="../jquery.js"></script>
+        
+        <script>
+            /*
+                addClassBtn id wali button box1 id wale element me changeBgColor class add kar degi
+            */
+            $('#addClassBtn').click(function() {
+                $('#box1').addClass('changeBgColor');
+            });
+
+            /*
+                removeClassBtn id wali button box1 id wale element me changeBgColor class remove kar degi
+            */
+            $('#removeClassBtn').click(function() {
+                $('#box1').removeClass('changeBgColor');
+            });
+
+            /*
+                toggleClassBtn id wali button box1 id wale element me changeBgColor class toggle karegi
+                it means, ye button changeBgColor class ko har click pe add or remove karegi
+            */
+            $('#toggleClassBtn').click(function() {
+                $('#box1').toggleClass('changeBgColor');
+            });
+        </script>
+    </body>
+</html>

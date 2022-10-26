@@ -1,0 +1,8 @@
+#box1 {
+    border: 2px solid black;
+    width: 40%;
+}
+
+.changeBgColor {
+    background-color: greenyellow;
+}
