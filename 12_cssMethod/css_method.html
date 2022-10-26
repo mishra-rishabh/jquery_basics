@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Method</title>
+    </head>
+
+    <body>
+
+        <!--
+            humare paas html me kayi tags/elements hote hain. agar hum kisi element me jquery ki
+            help se usme css apply krna chahte hain to uske hum css() method use krte hain.
+        -->
+        <h1>CSS Method</h1>
+
+        <div id="box1">
+            <h2>I am a box 1</h1>
+            <p>something something something something something something something something something something</p>
+        </div>
+        <br/>
+        <button id="myBtn1">CSS Single Property</button>
+        <button id="myBtn2">CSS Multiple Property</button>
+
+        <script src="../jquery.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                /*
+                    yaha humne myBtn1 id wali button ke click pe css apply ki box1 id wale div pe.
+                    isme single css property apply ki. gaur krne wali baat ye hai ki humne css()
+                    method ke ander jo parameters pass kiye hain wo comma separated hain. pehla parameter
+                    property hai aur dusra parameter value hai.
+                */
+                $('#myBtn1').click(function() {
+                    $('#box1').css("border", "2px solid black");
+                });
+
+                /*
+                    yaha humne myBtn2 id wali button ke click pe css apply ki box1 id wale div pe.
+                    isme multiple css properties apply ki. gaur krne wali baat ye hai ki humne css()
+                    method ke ander {} curly braces use kiye hain aur property and unki value colon separated hain.
+                */
+                $('#myBtn2').click(function() {
+                    $('#box1').css({
+                        "background": "greenyellow",
+                        "color": "blue"
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

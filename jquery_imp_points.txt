@@ -87,3 +87,6 @@ refer 10_setMethods/set_methods.html
 
 18. add and remove class
 refer 11_addRemoveClass/add_remove_class.html
+
+19. css method
+refer 12_cssMethod/css_method.html
